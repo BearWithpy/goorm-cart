@@ -61,7 +61,8 @@ public class CartApp {
 
 
 [결과 화면]
-![](../스크린샷 2023-11-30 오후 6.05.06.png)
+![스크린샷 2023-11-30 오후 6 05 06](https://github.com/BearWithpy/goorm_cart/assets/58184008/6bd5fb88-e83a-4566-a5dc-7149532ff22a)
+
 
 ### 비고
 
