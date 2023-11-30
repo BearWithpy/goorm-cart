@@ -43,7 +43,7 @@ public class Product {
 
     @Override
     public String toString() {
-        return String.format("Product{key=%s, name='%s', price=%f}", productId, productName, price);
+        return String.format("Product{key=%s, name='%s', price=%.2f}", productId, productName, price);
     }
 }
 

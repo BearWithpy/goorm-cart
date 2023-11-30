@@ -1,11 +1,9 @@
 import java.util.HashMap;
-import java.util.LinkedList;
 import java.util.Map;
-import java.util.Queue;
 
 public class Cart {
 
-    private HashMap<Product, Integer> cart;
+    private final HashMap<Product, Integer> cart;
 
     public Cart() {
         cart = new HashMap<>();
@@ -30,5 +28,4 @@ public class Cart {
             cart.remove(product);
         }
     }
-
 }

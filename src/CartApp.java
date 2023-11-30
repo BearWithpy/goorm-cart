@@ -1,8 +1,9 @@
+import java.io.IOException;
 import java.util.HashSet;
 import java.util.Set;
 
 public class CartApp {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InvalidCSVFormatException, IOException {
         //상품 목록 생성
         Set<Product> productSet = new HashSet<>();
 
@@ -42,5 +43,11 @@ public class CartApp {
         System.out.println();
         // TODO: 장바구니에 현재 담긴 상품들을 출력 (상품이름, 각 상품의 갯수)
         myCart.showItems();
+
+
+        System.out.println();
+        // TODO: I/O 스트림을 사용하여 csv 파일로부터 상품목록을 불러올 수 있도록 장바구니 앱을 수정합니다.
+        Cart myCartCSV = CSVReader.readProductsFromCSV("/Users/junsu/Desktop/goorm_9th/demo/product.csv");
+        myCartCSV.showItems();
     }
 }
